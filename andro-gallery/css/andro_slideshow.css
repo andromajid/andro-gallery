@@ -1,0 +1,11 @@
+/* 
+    Document   : andro_slideshow.css
+    Created on : 19 Feb 12, 16:01:26
+    Author     : andro
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.andro_container img.andro-gallery {
+    margin: 1px 4px;
+}
+
