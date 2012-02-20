@@ -69,7 +69,7 @@ function attach_EasyGallery_jquery() {
 }
 
 //add javascript jquery
-add_action('wp_enqueue_scripts', 'attach_EasyGallery_jquery');
+//add_action('wp_enqueue_scripts', 'attach_EasyGallery_jquery');
 
 function attach_Easy_Gallery_JS() {
     if (!defined('ANDROGALLERY_PLUGIN_BASENAME'))
@@ -84,7 +84,7 @@ function attach_Easy_Gallery_JS() {
     $scripts = "<link rel=\"stylesheet\" href=\"" . get_settings('home') . "/wp-content/plugins/" . ANDROGALLERY_PLUGIN_NAME . "/css/andro_slideshow.css\" type=\"text/css\" media=\"screen\" title=\"Andro Gallery main stylesheet\" charset=\"utf-8\" />\n";
     $scripts = $scripts . "<link rel=\"stylesheet\" href=\"" . get_settings('home') . "/wp-content/plugins/" . ANDROGALLERY_PLUGIN_NAME . "/css/colorbox.css\" type=\"text/css\" />\n";
     $scripts = $scripts . "<script type=\"text/javascript\" src=\"" . get_settings('home') . "/wp-content/plugins/" . ANDROGALLERY_PLUGIN_NAME . "/js/colorbox.js\"></script>\n";
-    $scripts .= "<script>jQuery(document).ready(function() { jQuery('.andro_container .andro-gallery').colorbox({rel:'andro-gallery', transition:\"fade\"});});</script>";
+    $scripts .= "<script type=\"text/javascript\">j = jQuery.noConflict(); j(document).ready(function() { j('.andro_container .andro-gallery').colorbox({rel:'andro-gallery', transition:\"fade\"});});</script>";
     echo $scripts;
 }
 

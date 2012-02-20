@@ -7,5 +7,6 @@
 */
 .andro_container img.andro-gallery {
     margin: 1px 4px;
+    cursor: pointer;
 }
 
